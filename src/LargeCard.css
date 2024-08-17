@@ -1,0 +1,30 @@
+/* LargeCard.css */
+
+.large-card {
+    background: linear-gradient(135deg, #ff8c00, #ff6f00); /* Orange gradient background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 30px; /* Padding inside the card */
+    max-width: 600px; /* Maximum width for the card */
+    margin: 50px auto; /* Center align card horizontally with vertical margin */
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    justify-content: center; /* Center align items vertically */
+    height: 400px; /* Fixed height for the card */
+  }
+  
+  .large-card-title {
+    font-size: 2.5rem; /* Large font size for the title */
+    color: #fff; /* White color for the title */
+    margin-bottom: 20px; /* Spacing below the title */
+  }
+  
+  .large-card-content {
+    font-size: 1.2rem; /* Larger font size for content */
+    color: #fff; /* White color for the content */
+    line-height: 1.6; /* Improve readability */
+    margin: 0; /* Remove default margin */
+  }
+  

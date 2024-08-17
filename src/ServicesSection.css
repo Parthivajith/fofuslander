@@ -1,0 +1,46 @@
+/* ServicesSection.css */
+
+.services-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Slightly darker grey background for better contrast */
+    text-align: center; /* Center-align text */
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; /* Dark color for the title */
+    font-weight: bold;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: center; /* Center-align cards horizontally */
+    gap: 20px; /* Space between service cards */
+  }
+  
+  .service-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    padding: 20px; /* Padding inside cards */
+    max-width: 300px; /* Maximum width for cards */
+    text-align: center; /* Center-align text inside cards */
+    border: 2px solid #ffa500; /* Orange border for visual appeal */
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffa500; /* Bright orange color for titles */
+    border-bottom: 2px solid #ffa500; /* Orange underline for titles */
+    padding-bottom: 10px; /* Padding below title */
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666; /* Slightly lighter color for description text */
+    line-height: 1.6; /* Improve readability */
+  }
+  

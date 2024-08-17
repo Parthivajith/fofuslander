@@ -1,0 +1,55 @@
+/* Footer.css */
+
+.footer {
+    background-color: #bab9b9; /* Dark background color */
+    color: #454444; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .footer-container {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for the content */
+    display: flex;
+    justify-content: space-between; /* Space between logo and content */
+    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; /* Wrap items if needed */
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center; /* Center align logo vertically */
+  }
+  
+  .footer-logo-img {
+    height: 60px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  .footer-content {
+    text-align: center; /* Center align text and social media links */
+  }
+  
+  .footer-text {
+    margin-bottom: 10px; /* Space below the text */
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center; /* Center align social media icons */
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icon img {
+    height: 24px; /* Size of the social media icons */
+    width: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .social-icon:hover img {
+    opacity: 0.8; /* Slightly fade icon on hover */
+  }
+  
