@@ -8,12 +8,13 @@ import ServicesSection from './ServicesSection';
 import LargeCard from './LargeCard';
 import ProductCards from './ProductCards';
 import Footer from './Footer';
+import LandingSection from './LandindSection';
 
 function App() {
   return (
     <>
       <Navbar />
-      <AboutSection />
+      <LandingSection></LandingSection>
       <ProductCards></ProductCards>
       <HighlightsSection></HighlightsSection>
       <LargeCard></LargeCard>

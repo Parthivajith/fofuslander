@@ -1,0 +1,60 @@
+/* LandingSection.css */
+
+.landing-section {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+  }
+  
+  .landing-text {
+    width: 50%; /* Half width for the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 40px; /* Padding around text */
+    background-color: #f0f0f0; /* Light grey background */
+  }
+  
+  .landing-title {
+    font-size: 3rem; /* Large font size for the title */
+    color: #fb5c12; /* Orange color for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .landing-paragraph {
+    font-size: 1.25rem; /* Font size for the paragraph */
+    color: #333; /* Dark color for the text */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .landing-button {
+    background-color: #fb5c12; /* Orange background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    font-size: 0.875rem; /* Smaller font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above the button */
+    align-self: flex-start; /* Align the button to the start of its container */
+  }
+  
+  .landing-button:hover {
+    background-color: #e54e1d; /* Darker orange on hover */
+  }
+  
+  .landing-image {
+    width: 50%; /* Half width for the image */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    padding: 20px; /* Padding around the image */
+    background-color: #ffffff; /* White background for the image area */
+  }
+  
+  .landing-img {
+    width: 500px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners for the image */
+  }
+  

@@ -11,7 +11,7 @@ const Navbar = () => {
       <ul className="navbar-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#shop">Shop Now</a></li>
+        <li><a href="https://ecommerce.orci.in/">Shop Now</a></li>
       </ul>
     </nav>
   );
