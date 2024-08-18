@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src="public\fofus-removebg-preview.png" alt="Logo" className="footer-logo-img" /> {/* Replace with your logo path */}
+          <img src="fofus-removebg-preview.png" alt="Logo" className="footer-logo-img" /> {/* Replace with your logo path */}
         </div>
 
         {/* Text and Social Media Links Section */}
