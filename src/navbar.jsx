@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolling ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-brand">
         <a href="#">
-          <img src="public/fofus-removebg-preview.png" alt="Logo" className="logo" />
+          <img src="fofus-removebg-preview.png" alt="Logo" className="logo" />
         </a>
       </div>
       <ul className="navbar-links">
