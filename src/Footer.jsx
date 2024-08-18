@@ -18,19 +18,19 @@ const Footer = () => {
           </div>
           <div className="footer-social">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <img src="public\facebook-app-symbol.png" alt="Facebook" /> {/* Replace with your icon paths */}
+              <img src="facebook-app-symbol.png" alt="Facebook" /> {/* Replace with your icon paths */}
             </a>
             <a href="https://x.com/home" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <img src="public\twitter.png" alt="Twitter" />
+              <img src="twitter.png" alt="Twitter" />
             </a>
             <a href="https://www.instagram.com/fofus.keychains/?igsh=aDA4YzU3cnBuZzU5" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <img src="public\instagram.png" alt="Instagram" />
+              <img src="instagram.png" alt="Instagram" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <img src="public\linkedin.png" alt="LinkedIn" />
+              <img src="linkedin.png" alt="LinkedIn" />
             </a>
             <a href="https://mail.google.com/mail/u/0/" target="_blank" rel="noopener noreferrer" className="social-icon">
-              <img src="public\email.png" alt="Mail" />
+              <img src="email.png" alt="Mail" />
             </a>
           </div>
         </div>
