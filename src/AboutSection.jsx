@@ -1,6 +1,5 @@
-// src/AboutSection.jsx
 import React from 'react';
-import './App.css'; // Import the single CSS file
+import './App.css';
 
 const AboutSection = () => {
   return (

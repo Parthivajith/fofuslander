@@ -35,7 +35,7 @@
     margin-bottom: 15px; /* Spacing between name and button */
   }
   
-  .buy-now-button {
+  .buy-now-button  {
     background-color: #ff6f00; /* Button background color */
     color: #fff; /* Button text color */
     border: none; /* Remove button border */
@@ -45,7 +45,7 @@
     cursor: pointer; /* Pointer cursor on hover */
   }
   
-  .buy-now-button:hover {
+  .buy-now-button:hover  {
     background-color: #e65c00; /* Darker orange color on hover */
   }
   

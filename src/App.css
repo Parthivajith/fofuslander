@@ -3,25 +3,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: white; /* Background color for the body */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  padding-top: 50px; /* Space for the fixed navbar */
+  background-color: white;
+  overflow-x: hidden;
 }
 
 /* Navbar Styling */
 .navbar {
-  position: fixed; /* Make the navbar fixed at the top */
-  top: 0; /* Align the navbar to the top */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 1); /* Solid background color */
-  padding: 10px 20px;
-  width: 100%; /* Ensure it spans full width */
-  box-sizing: border-box; /* Include padding and border in width calculation */
-  z-index: 1000; /* Ensure it appears above other content */
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar when scrolled */
+.navbar-scrolled {
+  background-color: white;
 }
 
 /* Navbar Brand */
@@ -31,8 +35,10 @@ body {
 }
 
 .logo {
-  height: 100px; /* Adjust height as needed */
-  width: auto; /* Ensure aspect ratio is maintained */
+  height: 80px;
+  width: auto;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 /* Navbar Links */
@@ -41,12 +47,12 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-right: 45px; /* Adjust spacing from icons */
+  margin-right: 45px;
 }
 
 .navbar-links li {
   margin-left: 20px;
-  margin-right: 50px; /* Increase spacing between links */
+  margin-right: 50px;
 }
 
 .navbar-links a {
@@ -59,70 +65,56 @@ body {
   text-decoration: underline;
 }
 
-/* Navbar Icons */
-.navbar-icons {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  margin-left: 15px; /* Spacing between icons */
-}
-
-.icon img {
-  height: 24px; /* Adjust as needed */
-}
-
 /* About Section Styling */
 .about-section {
   display: flex;
   align-items: center;
-  height: calc(100vh - 50px); /* Adjusted height to ensure it fits below the navbar */
-  margin-top: 0; /* Remove any extra margin at the top */
-  padding: 0; /* Remove any extra padding */
-  box-sizing: border-box; /* Ensure padding and borders are included in height calculation */
-  background-color: #f0f0f0; /* Light grey background color */
+  height: calc(100vh - 50px);
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
 }
 
 .about-text {
-  width: 50%; /* Takes up half the width */
-  padding: 0px; /* Add padding for spacing */
+  width: 50%;
+  padding: 0px;
   box-sizing: border-box;
-  color: black; /* Ensure text is visible */
+  color: black;
   background-color: #f0f0f0;
-  margin-left: 40px; /* Light grey background to match the section */
+  margin-left: 40px;
 }
 
 .about-image {
-  width: 50%; /* Takes up the other half of the width */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
-  padding: 20px; /* Add padding around the image */
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   box-sizing: border-box;
   margin-left: 30px;
 }
 
 .about-img {
-  max-width: 60%; /* Scale image to 80% of its container’s width */
-  max-height: 0%; /* Ensure image doesn't exceed 80% of its container’s height */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 15px; /* Rounded corners */
-  display: block; /* Remove extra space below the image */
+  max-width: 60%;
+  max-height: 80%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
   padding-right: 80px;
 }
 
 .about-button {
-  background-color: #fb5c12; /* Orange background color */
-  color: #fff; /* White text color */
-  border: none; /* Remove button border */
-  border-radius: 5px; /* Rounded corners for button */
-  padding: 10px 20px; /* Button padding */
-  font-size: 1rem; /* Button font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-top: 20px; /* Space above the button */
-  text-align: center; /* Center text inside the button */
+  background-color: #fb5c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .about-button:hover {
-  background-color: #e54e1d; /* Darker orange on hover */
+  background-color: #e54e1d;
 }
