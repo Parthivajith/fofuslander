@@ -21,7 +21,6 @@ body {
   box-sizing: border-box;
   z-index: 1000;
   transition: background-color 0.3s ease;
-  padding: 10px 30px;
 }
 
 /* Navbar when scrolled */
@@ -36,9 +35,10 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
-  padding-left: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
 /* Navbar Links */
@@ -47,10 +47,12 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-right: 45px;
 }
 
 .navbar-links li {
   margin-left: 20px;
+  margin-right: 50px;
 }
 
 .navbar-links a {
@@ -63,47 +65,56 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Styling */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
-
-  .logo {
-    height: 50px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .navbar-links li {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-
-  .navbar-links a {
-    font-size: 1.2rem;
-  }
+/* About Section Styling
+.about-section {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 50px);
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
 }
 
-@media screen and (max-width: 480px) {
-  .navbar {
-    padding: 10px 15px;
-  }
-
-  .logo {
-    height: 40px;
-  }
-
-  .navbar-links a {
-    font-size: 1rem;
-  }
+.about-text {
+  width: 50%;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  background-color: #f0f0f0;
+  margin-left: 40px;
 }
+
+.about-image {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+.about-img {
+  max-width: 60%;
+  max-height: 80%;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  padding-right: 80px;
+}
+
+.about-button {
+  background-color: #fb5c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-button:hover {
+  background-color: #e54e1d;
+} */
