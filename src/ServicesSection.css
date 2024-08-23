@@ -1,46 +1,86 @@
-/* ServicesSection.css */
-
 .services-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* Slightly darker grey background for better contrast */
-    text-align: center; /* Center-align text */
-  }
-  
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Slightly darker grey background for better contrast */
+  text-align: center; /* Center-align text */
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Dark color for the title */
+  font-weight: bold;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center-align cards horizontally */
+  gap: 20px; /* Space between service cards */
+}
+
+.service-card {
+  background-color: #ffffff; /* White background for cards */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+  padding: 20px; /* Padding inside cards */
+  max-width: 300px; /* Maximum width for cards */
+  text-align: center; /* Center-align text inside cards */
+  border: 2px solid #ffa500; /* Orange border for visual appeal */
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffa500; /* Bright orange color for titles */
+  border-bottom: 2px solid #ffa500; /* Orange underline for titles */
+  padding-bottom: 10px; /* Padding below title */
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #666; /* Slightly lighter color for description text */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 1024px) {
   .services-title {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333; /* Dark color for the title */
-    font-weight: bold;
+      font-size: 2rem; /* Adjust title size for medium screens */
   }
-  
-  .services-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    justify-content: center; /* Center-align cards horizontally */
-    gap: 20px; /* Space between service cards */
-  }
-  
+
   .service-card {
-    background-color: #ffffff; /* White background for cards */
-    border-radius: 12px; /* Slightly more rounded corners */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
-    padding: 20px; /* Padding inside cards */
-    max-width: 300px; /* Maximum width for cards */
-    text-align: center; /* Center-align text inside cards */
-    border: 2px solid #ffa500; /* Orange border for visual appeal */
+      max-width: 45%; /* Cards take up 45% of the container width */
+      padding: 15px; /* Reduce padding for smaller screens */
   }
-  
+}
+
+@media (max-width: 768px) {
+  .services-title {
+      font-size: 1.75rem; /* Further reduce title size for smaller screens */
+  }
+
+  .service-card {
+      max-width: 100%; /* Cards take up full width on small screens */
+      padding: 15px; /* Consistent padding */
+      margin-bottom: 20px; /* Add space between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+      font-size: 1.5rem; /* Smaller title size for extra small screens */
+  }
+
+  .service-card {
+      padding: 10px; /* Reduce padding for the smallest screens */
+  }
+
   .service-title {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #ffa500; /* Bright orange color for titles */
-    border-bottom: 2px solid #ffa500; /* Orange underline for titles */
-    padding-bottom: 10px; /* Padding below title */
+      font-size: 1.25rem; /* Smaller font size for card titles */
+      padding-bottom: 5px; /* Adjust padding below title */
   }
-  
+
   .service-description {
-    font-size: 1rem;
-    color: #666; /* Slightly lighter color for description text */
-    line-height: 1.6; /* Improve readability */
+      font-size: 0.9rem; /* Reduce font size for descriptions */
   }
-  
+}

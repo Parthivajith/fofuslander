@@ -1,30 +1,73 @@
-/* LargeCard.css */
-
 .large-card {
-    background: linear-gradient(135deg, #ff8c00, #ff6f00); /* Orange gradient background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    padding: 30px; /* Padding inside the card */
-    max-width: 600px; /* Maximum width for the card */
-    margin: 50px auto; /* Center align card horizontally with vertical margin */
-    text-align: center; /* Center align text */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    justify-content: center; /* Center align items vertically */
-    height: 400px; /* Fixed height for the card */
+  background: linear-gradient(135deg, #ff8c00, #ff6f00); /* Orange gradient background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 30px; /* Padding inside the card */
+  max-width: 600px; /* Maximum width for the card */
+  margin: 50px auto; /* Center align card horizontally with vertical margin */
+  text-align: center; /* Center align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  height: 400px; /* Fixed height for the card */
+}
+
+.large-card-title {
+  font-size: 2.5rem; /* Large font size for the title */
+  color: #fff; /* White color for the title */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.large-card-content {
+  font-size: 1.2rem; /* Larger font size for content */
+  color: #fff; /* White color for the content */
+  line-height: 1.6; /* Improve readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  .large-card {
+      padding: 20px; /* Reduce padding for smaller screens */
+      height: auto; /* Allow height to adjust based on content */
   }
-  
+
   .large-card-title {
-    font-size: 2.5rem; /* Large font size for the title */
-    color: #fff; /* White color for the title */
-    margin-bottom: 20px; /* Spacing below the title */
+      font-size: 2rem; /* Slightly smaller font size for title */
   }
-  
+
   .large-card-content {
-    font-size: 1.2rem; /* Larger font size for content */
-    color: #fff; /* White color for the content */
-    line-height: 1.6; /* Improve readability */
-    margin: 0; /* Remove default margin */
+      font-size: 1.1rem; /* Slightly smaller font size for content */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .large-card {
+      padding: 15px; /* Further reduce padding for small screens */
+      margin: 30px auto; /* Reduce vertical margin */
+  }
+
+  .large-card-title {
+      font-size: 1.75rem; /* Smaller font size for title */
+  }
+
+  .large-card-content {
+      font-size: 1rem; /* Smaller font size for content */
+  }
+}
+
+@media (max-width: 320px) {
+  .large-card {
+      padding: 10px; /* Minimal padding for very small screens */
+      margin: 20px auto; /* Further reduce vertical margin */
+  }
+
+  .large-card-title {
+      font-size: 1.5rem; /* Smallest font size for title */
+  }
+
+  .large-card-content {
+      font-size: 0.9rem; /* Smallest font size for content */
+  }
+}

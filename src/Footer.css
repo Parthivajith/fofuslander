@@ -1,55 +1,133 @@
-/* Footer.css */
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  overflow-x: hidden;
+}
 
-.footer {
-    background-color: #bab9b9; /* Dark background color */
-    color: #454444; /* White text color */
-    padding: 20px; /* Padding around the footer */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    flex-direction: column; /* Stack items vertically */
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  padding: 10px 30px;
+}
+
+/* Navbar when scrolled */
+.navbar-scrolled {
+  background-color: white;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  padding-left: 10px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
   }
-  
-  .footer-container {
-    width: 100%; /* Full width */
-    max-width: 1200px; /* Max width for the content */
-    display: flex;
-    justify-content: space-between; /* Space between logo and content */
-    align-items: center; /* Center align items vertically */
-    flex-wrap: wrap; /* Wrap items if needed */
+
+  .logo {
+    height: 50px;
   }
-  
-  .footer-logo {
-    display: flex;
-    align-items: center; /* Center align logo vertically */
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .footer-logo-img {
-    height: 60px; /* Adjust logo size */
-    width: auto; /* Maintain aspect ratio */
+
+  .navbar-links li {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
   }
-  
-  .footer-content {
-    text-align: center; /* Center align text and social media links */
+
+  .navbar-links a {
+    font-size: 1.2rem;
   }
-  
-  .footer-text {
-    margin-bottom: 10px; /* Space below the text */
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
   }
-  
-  .footer-social {
-    display: flex;
-    justify-content: center; /* Center align social media icons */
-    gap: 15px; /* Space between icons */
+
+  .logo {
+    height: 40px;
   }
-  
-  .social-icon img {
-    height: 24px; /* Size of the social media icons */
-    width: auto; /* Maintain aspect ratio */
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
   }
-  
-  .social-icon:hover img {
-    opacity: 0.8; /* Slightly fade icon on hover */
+
+  .navbar-links li {
+    margin-bottom: 8px;
   }
-  
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+}
+
+/* Additional Enhancements */
+@media screen and (max-width: 320px) {
+  .navbar {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .navbar-links a {
+    font-size: 0.9rem;
+  }
+}
